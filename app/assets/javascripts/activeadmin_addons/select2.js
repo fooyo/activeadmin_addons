@@ -22,6 +22,7 @@ $(function() {
             method = $(el).data('method'),
             width = $(el).data('width'),
             selectOptions = {
+              language: 'zh-CN',
               width: width || DEFAULT_SELECT_WIDTH,
               tags: $(el).data('collection')
             };
@@ -185,11 +186,13 @@ $(function() {
       if ($(select).closest('.filter_form').length > 0) {
         $(select).select2({
           width: 'resolve',
+          language: 'zh-CN',
           allowClear: allowClear
         });
       } else {
         $(select).select2({
           width: DEFAULT_SELECT_WIDTH,
+          language: 'zh-CN',
           allowClear: allowClear
         });
       }
