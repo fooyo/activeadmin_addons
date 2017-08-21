@@ -134,6 +134,7 @@ $(function() {
 
         var select2Config = {
           width: width,
+          language: 'cn',
           containerCssClass: 'nested-select-container',
           minimumInputLength: minimumInputLength,
           initSelection: function(element, callback) {
